@@ -10,7 +10,10 @@ class User( BaseModel):
     BaseModel: parent class
     """
     id: int 
+    Fname: str
+    Mname: str
+    Lname: str
     username: str
     email: str
-    image_file: str
+    profile_image: str
     password: str

@@ -16,7 +16,8 @@ def create(request: schemas.User, db: Session):
     new_user = db.query(models.User).filter(models.User.email == request.email).first()
     if new_user:
         raise HTTPException(status_code = 409, detail = f'User has already an account')
-    new_user = models.User(username=request.username, email= request.email, image_file=request.image_file, password=request.password)
+    new_user = models.User(username=request.username,Fname= request.Fname, Mname=request.Mname,
+    Lname= request.Lname, email= request.email, profile_image=request.profile_image, password=request.password)
     db.add(new_user)
     db.commit()
     db.refresh(new_user)
