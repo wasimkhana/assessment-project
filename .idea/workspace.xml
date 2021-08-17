@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eb1aeccd-ea1d-45db-b65e-c93f726cbb3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/lofo.db" beforeDir="false" afterPath="$PROJECT_DIR$/lofo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/repository/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/repository/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/f.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lofo/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/schemas.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +45,7 @@
       <updated>1629138986164</updated>
       <workItem from="1629138991249" duration="924000" />
       <workItem from="1629139954774" duration="850000" />
-      <workItem from="1629165415104" duration="705000" />
+      <workItem from="1629165415104" duration="1988000" />
     </task>
     <servers />
   </component>
