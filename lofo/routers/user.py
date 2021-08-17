@@ -21,6 +21,6 @@ def create(request: schemas.User, db: Session = Depends(database.get_db)):
     request: schema of user table
     db: database connection session
     """
-    return user.create(request, db)
+    return user.create_user(request, db)
 
 

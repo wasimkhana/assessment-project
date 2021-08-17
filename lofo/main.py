@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from . import schemas, models
 from .database import engine, get_db
 from sqlalchemy.orm import Session
-from .routers import user, authentication
+from .routers import user, authentication, item
 
 
 app = FastAPI()
@@ -16,4 +16,5 @@ models.Base.metadata.create_all(engine)
 
 app.include_router(user.router)
 app.include_router(authentication.router)
+app.include_router(item.router)
 

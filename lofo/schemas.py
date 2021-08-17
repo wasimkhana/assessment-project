@@ -9,7 +9,7 @@ class User( BaseModel):
     Args:
     BaseModel: parent class
     """
-    id: int 
+    
     Fname: str
     Mname: str
     Lname: str
@@ -18,6 +18,19 @@ class User( BaseModel):
     profile_image: str
     password: str
     
+    
+class Item(BaseModel):
+    """
+    Item schema for interaction with API and format retrieving data in JSON.
+    user()
+  
+    Args:
+    BaseModel (class): parent class
+    """
+    itemname: str
+    item_location: str
+    item_description: str
+    item_image: str
 
 class Login(BaseModel):
     email: str
@@ -30,4 +43,4 @@ class Token(BaseModel):
 
 
 class TokenData(BaseModel):
-    email: Optional[str] = None
+    email: str

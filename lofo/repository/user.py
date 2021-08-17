@@ -35,7 +35,7 @@ def validate_email(email):
         return False
 
 
-def create(request: schemas.User, db: Session):
+def create_user(request: schemas.User, db: Session):
     """
     Create user tuple with defined schema in db.
     
