@@ -21,4 +21,5 @@ class User( Base):
     username =  Column( String(20), unique=True, nullable=False)
     email =  Column( String(80), unique=True, nullable=False)
     profile_image =  Column( String(20), default='default.jpg')
-    password =  Column( String(60), nullable=False)
+    password =  Column( String, nullable=False)
+    
