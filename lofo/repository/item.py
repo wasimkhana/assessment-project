@@ -45,3 +45,32 @@ def get_items(item_name: Optional[str], location: Optional[str], db: Session):
 
         return [{"item_name": item.item_name, "location": item.item_location,
                  "Description": item.item_description, "item_image": item.item_image} for item in items]
+
+
+def item_not_found():
+    raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail='Item with not found')
+
+
+def update_item(item_id: int, request: schemas.Item, db: Session, current_user):
+    current_user_data = db.query(models.User).filter(models.User.email == current_user.email).first()
+    item_to_update = db.query(models.Item).filter(models.Item.id == item_id,
+                                                  models.Item.user_id == current_user_data.id)
+    if not item_to_update.first():
+        raise item_not_found()
+
+    item_to_update.update(request.dict())
+    db.commit()
+    return "Item updated successfully"
+
+
+def delete_item(item_id: int, db: Session, current_user):
+    current_user_data = db.query(models.User).filter(models.User.email == current_user.email).first()
+    item_to_delete = db.query(models.Item).filter(models.Item.id == item_id,
+                                                  models.Item.user_id == current_user_data.id)
+
+    if not item_to_delete.first():
+        raise item_not_found()
+
+    item_to_delete.delete(synchronize_session=False)
+    db.commit()
+    return "Post successfully deleted"

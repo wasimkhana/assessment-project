@@ -10,10 +10,7 @@ router = APIRouter(tags=['Login'])
 @router.post('/login')
 def login(request: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(database.get_db)):
     """
-    Authenticate credentials to generate access_token.
-    Args:
-    request: login credentials
-    db: database connection session
+    Authenticate credentials to generate access_token and authorize the user to the locked functionalities securely.
     """
     user = db.query(models.User).filter(
         models.User.email == request.username).first()

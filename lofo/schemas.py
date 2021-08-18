@@ -20,6 +20,14 @@ class User(BaseModel):
     password: str
 
 
+class UserInfo(BaseModel):
+    firstname: str
+    middlename: str
+    lastname: str
+    profile_image: str
+    password: str
+
+
 # schema to add Item details
 class Item(BaseModel):
     """
