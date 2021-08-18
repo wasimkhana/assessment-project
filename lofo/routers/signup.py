@@ -82,8 +82,8 @@ def create_user(request: schemas.User, db: Session):
 
 
 @router.post('/signup', status_code=status.HTTP_201_CREATED)
-def create_user(request: schemas.User, db: Session = Depends(database.get_db)):
+def create_profile(request: schemas.User, db: Session = Depends(database.get_db)):
     """
     Endpoint to create user-profile. The system uses encryption to keep your password secure.
     """
-    return user.create_user(request, db)
+    return create_user(request, db)

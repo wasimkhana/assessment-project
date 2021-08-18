@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eb1aeccd-ea1d-45db-b65e-c93f726cbb3b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo.db" beforeDir="false" afterPath="$PROJECT_DIR$/lofo.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/hashing.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/hashing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/repository/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/repository/item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/repository/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/repository/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/routers/authentication.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/routers/item.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/routers/item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/routers/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/routers/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lofo/schemas.py" beforeDir="false" afterPath="$PROJECT_DIR$/lofo/schemas.py" afterDir="false" />
-    </list>
+    <list default="true" id="eb1aeccd-ea1d-45db-b65e-c93f726cbb3b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +42,7 @@
       <workItem from="1629165415104" duration="5032000" />
       <workItem from="1629246650028" duration="11886000" />
       <workItem from="1629263616534" duration="29000" />
-      <workItem from="1629263647119" duration="365000" />
+      <workItem from="1629263647119" duration="776000" />
     </task>
     <servers />
   </component>
