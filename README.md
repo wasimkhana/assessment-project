@@ -162,7 +162,7 @@ or
 [localhost:8000/docs](localhost:8000/redoc)
 
 
-Congratulations you successfully run the application.
+Congratulations! :partying_face:
 
 Link to the deployed application:
 [LOFO Application](https://pymps9.deta.dev/docs)
